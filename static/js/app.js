@@ -26,6 +26,7 @@ function init() {
         barChart(firstName);
         bubbleChart(firstName);
         demoInfo(firstName);
+        gaugeChart(firstName);
     });
 }
 
@@ -54,7 +55,10 @@ function barChart(arr) {
             y: first.otu_ids.slice(0,10).map((otu_id) => `OTU ${otu_id}`).reverse(),
             text: first.otu_labels.slice(0,10).reverse(),
             type: "bar",
-            orientation: "h"
+            orientation: "h",
+            marker: {
+                color: "rgb(243, 83, 144)"
+            }
         }];
 
         // Plot with plotly
@@ -117,7 +121,7 @@ function demoInfo(arr) {
         // Grab the first dictionary in metadata
         let first = filterMeta[0];
 
-        // clear metadata 
+        // Clear metadata 
         d3.select("#sample-metadata").html("");
 
         // Use 'Object.entries' to grab key:value pair
@@ -127,11 +131,68 @@ function demoInfo(arr) {
     });
 }
 
+function gaugeChart(arr) {
+
+    // Read in Json
+    d3.json(url).then((data) => {
+        console.log(data);
+
+        // Grab metadata (to grab wfreq) from json
+        let metadata = data.metadata;
+
+        // Filter through metadata to have id equal arr
+        let filterMeta = metadata.filter((mdata) => mdata.id == arr);
+
+        // Grab the first dictionary in the metadata
+        // Only grab the wfreq of the data
+        let first = filterMeta[0].wfreq;
+        
+        // trace the data to make a gauge chart
+        trace3 = [{
+            type: "indicator",
+            //domain: {x: [0, 1], y: [0,1]},
+            gauge: {
+                steps: [
+                    {range: [0, 1], color: "rgb(252, 237, 240)"},
+                    {range: [1, 2], color: "rgb(253, 226, 231)"},
+                    {range: [2, 3], color: "rgb(253, 215, 222)"},
+                    {range: [3, 4], color: "rgb(254, 203, 212)"},
+                    {range: [4, 5], color: "rgb(254, 192, 203)"},
+                    {range: [5, 6], color: "rgb(255, 181, 194)"},
+                    {range: [6, 7], color: "rgb(255, 178, 180)"},
+                    {range: [7, 8], color: "rgb(255, 170, 171"},
+                    {range: [8, 9], color: "rgb(256, 162, 160"}
+                ],
+                axis: {range: [0, 9],
+                       tickwidth: 1,
+                       tickcolor: "rgb(170, 51, 106)",
+                       tickvals: [0,1,2,3,4,5,6,7,8,9],
+                       ticktext: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+                       showticklabels: true,
+                       //ticklabels: "inside"
+                    },
+
+                bar: {color: "rgb(192, 64, 0)"},
+            },
+            value: first,
+            mode: "gauge+number",
+            title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week"}
+        }];
+
+        // Plot with Plotly
+        Plotly.newPlot("gauge", trace3);
+    });
+}
+
+
+
+
 // Update plots function
 function optionChanged(arr) {
     barChart(arr);
     bubbleChart(arr);
     demoInfo(arr);
+    gaugeChart(arr);
 }
 
 
