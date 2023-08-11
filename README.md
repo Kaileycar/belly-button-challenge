@@ -1,20 +1,20 @@
 # Belly Button Challenge
 
-Build your own interactive dashboard to explore the [Belly Button Biodiversity](https://robdunnlab.com/projects/belly-button-biodiversity/). This dataset shows of a microbial species (OTUs) that were present in more than 70% of people. This assignment consists of  
-three graphs (bar, bubble, and guage *optional*) with a demographic information box and a dropdown menu to see all the  
-individuals in this dataset. 
+Build your own interactive dashboard to explore the [Belly Button Biodiversity](https://robdunnlab.com/projects/belly-button-biodiversity/).   This dataset shows of a microbial species (OTUs) that were present in more than 70% of people. This assignment  
+consists of three graphs (bar, bubble, and guage *optional*) with a demographic information box and a dropdown  
+menu to see all the individuals in this dataset.   
 
 ---
 
 ## About
 
-Using JavaScript and HTML, you will be creating an interactive dashboard and deploy this repo in GitHub Pages. We are  
-looking at OUT's (operational taxonomic units) that were present in over 70% of people, while the rest had almost none.  
-Using the graphs, we can see what factors play into this microbial species in people. You will be setting up a horizontal  
-bar chart that lists the top 10 OTUs found in that individual. Using the same information, create a bubble chart that  
-displays each sample. The hover text for both graphs should be the `otu_labels`. Finally, an individuals information will  
-be created to show the metadata about that individual. All of these graphs should be able to update when a new sample  
-is selected from the `dropdown` menu.  
+Using JavaScript and HTML, you will be creating an interactive dashboard and deploy this repo in GitHub Pages.  
+We are looking at OUT's (operational taxonomic units) that were present in over 70% of people, while the rest  
+had almost none. Using the graphs, we can see what factors play into this microbial species in people. You will  
+be setting up a horizontal bar chart that lists the top 10 OTUs found in that individual. Using the same   
+information, create a bubble chart that displays each sample. The hover text for both graphs should be the  
+`otu_labels`. Finally, an individuals information will be created to show the metadata about that individual.   
+All of these graphs should be able to update when a new sample is selected from the `dropdown` menu.    
 
   *OPTIONAL*: Create a gauge that plots the weekly washing frequency of that individual. 
 
