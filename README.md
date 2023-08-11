@@ -2,7 +2,7 @@
 
 ---
 
-[Deployment](https://kaileycar.github.io/belly-button-challenge/)
+[Deployment](file:///Users/kaileycarbone/belly-button-challenge/static/js/index.html)
 
 ---
 
