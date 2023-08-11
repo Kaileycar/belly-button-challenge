@@ -40,7 +40,7 @@ is selected from the `dropdown` menu.
       * Use `otu_ids` as the labels  
       * Use `otu_labels` as the hovertext  
   * Make sure to use the `reverse()` function  
-  * The bar chart should look like this:
+  * The bar chart should look like this:  
     ![alt text](https://github.com/Kaileycar/belly-button-challenge/blob/main/data/bar.png "Bar Chart")
 
 
@@ -53,7 +53,7 @@ is selected from the `dropdown` menu.
       * `sample_values` for the marker size
       * `otu_ids` for the marker colors
       * `otu_labels` for the hovertext
-  * The bubble chart should look like this:
+  * The bubble chart should look like this:  
     ![alt text](https://github.com/Kaileycar/belly-button-challenge/blob/main/data/bubble.png "Bubble Chart")
 
 
@@ -63,7 +63,7 @@ is selected from the `dropdown` menu.
   * Grab the `metadata` from the json  
   * Make sure to clear the id *sample-metadata* so when you switch individuals, nothing copies over
   * Grab the key:value pair and display the text  
-  * The demographic information should look like this:  
+  * The demographic information should look like this:    
   ![alt text](https://github.com/Kaileycar/belly-button-challenge/blob/main/data/demographics.png "Demographics")
 
 
@@ -74,7 +74,7 @@ is selected from the `dropdown` menu.
   * Grab each name
   * Loop through each name and append it to the dropdown variable
       * Make sure to append `option` and text `name`
-  * The dropdown menu should look like this:
+  * The dropdown menu should look like this:  
     ![alt text](https://github.com/Kaileycar/belly-button-challenge/blob/main/data/dropdown.png "Dropdown")
 
 
@@ -84,7 +84,7 @@ is selected from the `dropdown` menu.
   * Grab the `metadata` from the json and then grab the `wfreq`
   * Use the [Gauge Chart](https://plotly.com/javascript/gauge-charts/) to find out the properties needed
   * Plot the weekly washing frequency of that individual
-  * The gauge chart should look like this:
+  * The gauge chart should look like this:  
     ![alt text](https://github.com/Kaileycar/belly-button-challenge/blob/main/data/gauge.png)
 
 
