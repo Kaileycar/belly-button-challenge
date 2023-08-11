@@ -97,7 +97,7 @@ is selected from the `dropdown` menu.
 
 ## Help
 
-* Huddles with Pan Marbibi on Wednesday 08/09/23
+* Huddled with Pan Marbibi on Wednesday 08/09/23
 
 ---
 
