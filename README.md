@@ -2,6 +2,10 @@
 
 ---
 
+[GitHub Pages](https://kaileycar.github.io/belly-button-challenge/)
+
+---
+
 Build your own interactive dashboard to explore the [Belly Button Biodiversity](https://robdunnlab.com/projects/belly-button-biodiversity/).   This dataset shows of a microbial species (OTUs) that were present in more than 70% of people. This assignment  
 consists of three graphs (bar, bubble, and guage *optional*) with a demographic information box and a dropdown  
 menu to see all the individuals in this dataset.   
